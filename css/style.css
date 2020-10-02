@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Stolzl';
+    src: url('../fonts/Stolzl-Regular.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Stolzl';
+    src: url('../fonts/Stolzl-Bold.ttf');
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Stolzl', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    color: #252525;
+}
+body {
+    margin-bottom: 50px;
+}
+.container {
+    width: inherit;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+header {
+    width: 100%;
+    flex-direction: column;
+}
+.header_top {
+    width: inherit;
+    justify-content: inherit;
+    margin: 20px 0;
+}
+.logo {
+    max-width: 50px;
+}
+a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: rgba(0 0 0 / .5);
+    transition: .3s;
+    font-size: 1.1rem;
+    border-bottom: 2px solid transparent;
+}
+a:hover {
+    color: #252525;
+    border-bottom: 2px solid;
+}
+.header_bot {
+    background: linear-gradient(to right, rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../pix/main.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: inherit;
+    height: 700px;
+    box-shadow: 0 0 20px rgb(0 0 0 / .5);
+}
+.header_bot div {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 15px;
+}
+section {
+    margin-top: 100px;
+}
+h1 {
+    font-size: 3.5rem;
+}
+hr {
+    width: 80%;
+    margin: 20px auto 40px;
+}
+p {
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+.cases {
+    justify-content: space-between;
+}
+.case {
+    max-width: 300px;
+    height: 400px;
+    padding: 15px;
+    box-shadow: 0 0 20px rgb(0 0 0 / .1);
+    border-radius: 3px;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .3s;
+}
+.case:hover {
+    transform: translateY(-10px);
+}
+button {
+    width: 100%;
+    border: none;
+    background: #252525;
+    padding: 10px 0;
+    color: white;
+    cursor: pointer;
+}
